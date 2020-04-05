@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Express web server</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/weather.png">
+    
+</head>
+
+<body>
+    <div class="container"> 
+        {{>header}}
+        <p> this is the famouse index file </p>
+        <form submit="" >
+            <input type="text" placeholder="location">
+            <button type="submit">search</button>
+        </form>
+
+        <p id="message1"></p>
+        <p id="message2"></p>
+
+    </div>
+    <div class="footer-container">
+        {{>footer}}
+    </div>   
+
+    <script src="/js/app_client.js"></script>
+</body>
+
+</html>
