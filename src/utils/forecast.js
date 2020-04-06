@@ -10,7 +10,7 @@ const forecast = (longtitude, latitude, query_address, callback) => {
             temAddress = query_address
         }
         const forcastURL = `http://api.openweathermap.org/data/2.5/forecast?q=${encodeURIComponent(temAddress)}&appid=14c9028d0ea61cf5e92c9dfa569b0abd`
-        console.log("address: ", address);
+        // console.log("address: ", address);
         request({url: forcastURL, json: true}, (error, response, body) => {
             if (error) {
                 callback("Unable to connect to weather service", undefined)

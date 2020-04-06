@@ -7,6 +7,8 @@ const forcast = require('./utils/forecast')
 
 const app = express()
 
+const port = process.env.PORT || 3001
+
 // set up static directory to serve (server working directory)
 app.use(express.static(path.join(__dirname, '../public')))
 
@@ -109,7 +111,7 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3001, () => {
-    console.log('The server is running up now')
+app.listen(port, () => {
+    console.log('The server is running up now on the port' + port)
 })
 
